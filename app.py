@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title("🏦 Bank Statement ADB Analyzer")
 
-uploaded_file = st.file_report("Upload your PDF statement", type="pdf")
+uploaded_file = st.file_uploader("Upload your PDF statement", type="pdf")
 
 if uploaded_file:
     with st.spinner('Analyzing transactions...'):
@@ -13,4 +13,5 @@ if uploaded_file:
         # 3. Display Results
         st.success("Analysis Complete!")
         st.metric(label="Average Daily Balance (ADB)", value="₹ 45,230")
+
         st.line_chart(daily_balance_df) # Visualizes balance swings
