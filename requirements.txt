@@ -1,0 +1,14 @@
+# Web Framework
+streamlit
+
+# PDF & Data Processing
+pandas
+pdfplumber
+openpyxl
+
+# AI Integration
+google-generativeai
+
+# Security & Utilities
+python-dotenv
+pikepdf
