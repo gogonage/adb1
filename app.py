@@ -8,7 +8,7 @@ from datetime import datetime
 st.set_page_config(page_title="ADB Analyzer Pro", page_icon="🏦", layout="wide")
 
 # Securely fetch the API Key from Streamlit Secrets
-API_KEY = st.secrets.get("GEMINI_API_KEY")
+API_KEY = st.secrets.get("AIzaSyDuanaq23tni5hj4XhkFr3tJUR2DFin51g")
 
 def extract_bank_data(uploaded_file):
     """Uses Gemini to extract structured transaction data from PDF."""
@@ -96,3 +96,4 @@ if uploaded_file:
                 st.error("Failed to extract data. Please check the PDF quality.")
 else:
     st.info("Please upload a PDF statement to begin the analysis.")
+
